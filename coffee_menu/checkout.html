@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+  </head>
+  <style>
+    #cont{
+      /* border: 2px solid rgb(112, 115, 116); */
+      width: 320px;
+      height: 230px;
+      margin: auto;
+      box-shadow: rgba(104, 218, 212, 0.3) 0px 19px 38px, rgba(29, 194, 186, 0.22) 0px 15px 12px;
+      margin-top: 5%;
+    }
+    label{
+      padding-left: 20%;
+    }
+    input{
+      margin-left: 20%;
+
+    }
+    button{
+      margin-left: 20%;
+    }
+  </style>
+
+  <body>
+    <div id="order-form">
+      <!--Add your form html element here-->
+      <!--In form, give #name,#number and #address as HTML id's to relevant input elements -->
+      <!-- confirm button with id "confirm" -->
+      <div id="cont">
+        <label for="cardNumber">Card Number</label><br>
+        <input type="text" id="cardNumber" name="cardNumber"placeholder="Card Number" />
+        <br/>
+        <br/>
+        <label for="dateOfExpiry">Date Of Expiry</label><br>
+        <input
+          type="date"
+          id="dateOfExpiry"
+          name="dateOfExpiry"
+          placeholder="Date Of Expiry"
+        />
+        <br />
+        <br />
+        <label for="cvv">CVV</label><br>
+        <input type="text" id="cvv" placeholder="CVV" />
+        <br />
+        <br />
+        <button onclick="submit()">Make Payment</button>
+        <br />
+        <br />
+        </div>
+    </div>
+  </body>
+</html>
+
+<script src="./scripts/checkout.js"></script>

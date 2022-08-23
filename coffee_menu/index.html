@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+  </head>
+  <style>
+    body{
+      margin: 0;
+      padding: 0;
+    }
+    #navbar{
+      width: 100%;
+      height: 8vh;
+      display: flex;
+      justify-content: space-between;
+      background-color: #383838;
+      color: #fff;
+      font-size: 20px;
+      
+    }
+
+    #nav{
+      width: 35%;
+      display: flex;
+      justify-content: space-around;
+
+    }
+
+    #menu{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-gap: 20px;
+        margin-top: 20px;
+    }
+
+    #menu > div{
+      background-color: rgb(51, 48, 48);
+      color: white;
+      align-items: center;
+      text-align: center;
+      font-weight: 900;
+    }
+    img{
+      width: 100%;
+      height: 30rem;
+    }
+
+    button{
+      width: 20vh;
+      height: 5vh;
+      margin-bottom: 10px;
+    }
+
+    button:hover{
+      color: #fff;
+      background-color: #5e5c5c;
+      border: 1px solid white;
+      
+      
+    }
+  </style>
+
+  <body>
+    <div id="navbar">
+      <!--Add navbar divs here-->
+      <div style="margin: 10px 40px ;">Home</div>
+       <div id="nav">
+      <div>Signup</div>
+      <div>Login</div>
+      <!-- Link to bucket.html -->
+     
+      <a href="./bucket.html">bucket:</a> 
+      <div id="coffee_count">
+        <!--Show total number of coffee added to bucket here, do not add anything only Total count. Not even "Count - 5" but  only number like this "5" -->
+      </div>
+    </div>
+    </div>
+
+    <div id="menu">
+      <!--Show coffee list here in grid format-->
+      <!-- add an add to bucket button to each item, give it HTML id as 'add_to_bucket' -->
+    </div>
+  </body>
+</html>
+
+<script src="./scripts/index.js"></script>
+
+
+
+<!-- 1. Navbar should have id :- "navbar"
+2. Count div should have id :- "coffee_count"
+3. Append all coffee inside div with Id : “menu”
+4. Add to bucket button Id :- “add_to_bucket”
+5. The items should be stored in local storage with key :- “coffee”
+6. Bucket total price in bucket.html "H3" tag with Id :- “total_amount"
+7. Append the bucket items in local storage to a div with Id :- “bucket”
+8. Each item should have remove button with Id: “remove_coffee”
+9. On clicking remove the item should be removed from DOM as well as Localstorage
+10. Checkout Button Id :- “confirm_checkout”
+11. In checkout.html page name, number and address should have Ids as “name”, “number” and “address” respectively.
+12. Checkout page will have a confirm button with Id :- “confirm” -->

@@ -1,0 +1,54 @@
+body{
+    margin: 0;
+    padding: 0;
+  }
+  #navbar{
+    background-color: #383838;
+    height: 10vh;
+    width: 100%;
+    color: #fff;
+  }
+  #all_products{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-gap: 5px;
+    align-items: center;
+    text-align: center;
+    
+  }
+  
+  img{
+    width: 100%;
+    height: 100%;
+    margin-top: 2px;
+  }
+
+  button{
+    border: 1px solid teal;
+    background-color: teal;
+    color: #fff;
+    width: 10rem;
+    height: 7vh;
+    
+  }
+
+  #show_products{
+    margin-left: 2%;
+    padding: 1%;
+  }
+
+  a{
+    color: #fff;
+    font-size: x-large;
+  }
+
+  #fromDiv{
+    margin: auto;
+    width: 20%;
+    padding: auto;
+    margin-top: 2%;
+  }
+
+input{
+    width: 100%;
+}

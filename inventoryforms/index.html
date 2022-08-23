@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INVENTORY</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <div id="navbar">
+        <!--Create Show Products button here, give id as "show_products". avoid making spelling mistakes in HTML id's-->
+        <div id="show_products"><a href="./inventory.html">Show Products</a></div>
+      </div>
+      <div id="fromDiv">
+        <h2>Add Products</h2>
+        <!--Create a form here to accept product data from user, give form HTML id as "products"-->
+       
+          <form id="addProducts" onsubmit="storeData(event)">
+            <input type="text" id="type" placeholder="Type"><br><br>
+            <input type="text" id="desc" placeholder="Description"><br><br>
+            <input type="number" id="price" placeholder="Price"><br><br>
+            <input type="text" id="image" placeholder="Image"><br><br>
+            <button id="add_product" type="submit" type="clear">Add more Product</button>
+        </form>
+  
+        
+   
+      </div> 
+</body>
+</html>
+
+<script src="./script/index.js"></script>
